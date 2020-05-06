@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>OMDb API</title>
+    <link rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/select2/dist/css/select2.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <div class="container text-center">
+
+      <h2>Sortable - Drag & Drop</h2>
+      <form class="form-inline" id="search-form">
+        <input type="text" class="form-control" placeholder="Find movie" id="search-input">
+        <input type="submit" class="btn btn-primary">
+      </form>
+      <ul id="results" class="list-inline"></ul>
+
+    <hr>
+
+    <h2>Markdown-it
+    <textarea class="form-control" id="editor" rows="4"></textarea>
+    <div id="preview"></div>
+    <hr>
+
+    <h2>Select2</h2>
+    <select class="select2" name="country">
+      <option value="AL">Alabama</option>
+      <option value="WA">Washington</option>
+      <option value="NY">New York</option>
+      <option value="WY">Wyoming</option>
+    </select>
+
+  </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
